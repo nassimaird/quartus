@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+vniosvprocessor_jtag
+Z1 2./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v
+Z2 !s110 1717810821
+!i10b 1
+!s100 ILSTU<Y@h[2J3zgnn<[EY2
+I;PZNOQ1bN30ibB@L5PT;k0
+R0
+Z3 w1717807914
+Z4 8./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v
+Z5 F./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v
+!i122 0
+L0 331 257
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z8 !s108 1717810821.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v|
+Z9 !s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v|-work|jtag|
+!i113 0
+Z10 o-work jtag -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vniosvprocessor_jtag_scfifo_r
+R1
+R2
+!i10b 1
+!s100 J8BI[@SAVX[DiQl@Vk=9V3
+Im3a@>>?3?HT=oJDDUoZcl2
+R0
+R3
+R4
+R5
+!i122 0
+L0 243 78
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 ./../niosvprocessor_tb/simulation/submodules/niosvprocessor_jtag.v|
+R9
+!i113 0
+R10
+R11
+vniosvprocessor_jtag_scfifo_w
+R1
+R2
+!i10b 1
+!s100 `XV<<4J27lU:[SHBS?5Oe3
+IY4a??^8<mTifKN_7aCnKj0
+R0
+R3
+R4
+R5
+!i122 0
+L0 78 76
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+vniosvprocessor_jtag_sim_scfifo_r
+R1
+R2
+!i10b 1
+!s100 =B?YjW><9i8=oI:KZFR3Q0
+ILh>P:WMIUm9B]T<Qn4a5K0
+R0
+R3
+R4
+R5
+!i122 0
+L0 164 69
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+vniosvprocessor_jtag_sim_scfifo_w
+R1
+R2
+!i10b 1
+!s100 L_42BG1gRiH0:J]e2<PX_3
+IM<NlfIN>CUiO]XIe[NZz91
+R0
+R3
+R4
+R5
+!i122 0
+L0 21 47
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11

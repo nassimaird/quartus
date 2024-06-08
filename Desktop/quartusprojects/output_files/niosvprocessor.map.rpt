@@ -1,0 +1,440 @@
+Analysis & Synthesis report for niosvprocessor
+Sat Jun  8 03:20:15 2024
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                                 ;
++-----------------------------+----------------------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Sat Jun  8 03:20:15 2024                              ;
+; Quartus Prime Version       ; 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition ;
+; Revision Name               ; niosvprocessor                                                 ;
+; Top-level Entity Name       ; testcode                                                       ;
+; Family                      ; Cyclone V                                                      ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                                      ;
+; Total registers             ; N/A until Partition Merge                                      ;
+; Total pins                  ; N/A until Partition Merge                                      ;
+; Total virtual pins          ; N/A until Partition Merge                                      ;
+; Total block memory bits     ; N/A until Partition Merge                                      ;
+; Total PLLs                  ; N/A until Partition Merge                                      ;
+; Total DLLs                  ; N/A until Partition Merge                                      ;
++-----------------------------+----------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEBA6U23I7       ;                    ;
+; Top-level entity name                                                           ; testcode           ; niosvprocessor     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition
+    Info: Processing started: Sat Jun  8 03:19:52 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off niosvprocessor -c niosvprocessor
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/niosvprocessor.v
+    Info (12023): Found entity 1: niosvprocessor File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/niosvprocessor.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_reset_controller.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_irq_mapper.sv
+    Info (12023): Found entity 1: niosvprocessor_irq_mapper File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_irq_mapper.sv Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0.v
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_avalon_st_adapter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_mux_002.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_rsp_mux_002 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_mux_002.sv Line: 51
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_mux.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_rsp_mux File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_demux.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_rsp_demux File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_rsp_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_mux_001.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_cmd_mux_001 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_mux_001.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_mux.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_cmd_mux File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_demux_002.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_cmd_demux_002 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_demux_002.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_demux.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_cmd_demux File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_cmd_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
+Info (12021): Found 5 design units, including 5 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
+    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_new.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_incr_burst_converter.sv
+    Info (12023): Found entity 1: altera_incr_burst_converter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_wrap_burst_converter.sv
+    Info (12023): Found entity 1: altera_wrap_burst_converter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_default_burst_converter.sv
+    Info (12023): Found entity 1: altera_default_burst_converter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_default_burst_converter.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_traffic_limiter.sv
+    Info (12023): Found entity 1: altera_merlin_traffic_limiter File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_traffic_limiter.sv Line: 49
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_reorder_memory.sv
+    Info (12023): Found entity 1: altera_merlin_reorder_memory File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_reorder_memory.sv Line: 28
+    Info (12023): Found entity 2: memory_pointer_controller File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_reorder_memory.sv Line: 185
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_005.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_router_005_default_decode File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_005.sv Line: 45
+    Info (12023): Found entity 2: niosvprocessor_mm_interconnect_0_router_005 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_005.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_004.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_router_004_default_decode File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_004.sv Line: 45
+    Info (12023): Found entity 2: niosvprocessor_mm_interconnect_0_router_004 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_004.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_002.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_router_002_default_decode File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: niosvprocessor_mm_interconnect_0_router_002 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router_002.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router.sv
+    Info (12023): Found entity 1: niosvprocessor_mm_interconnect_0_router_default_decode File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: niosvprocessor_mm_interconnect_0_router File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_mm_interconnect_0_router.sv Line: 84
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_axi_master_ni.sv
+    Info (12023): Found entity 1: altera_merlin_axi_master_ni File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_axi_master_ni.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_merlin_axi_translator.sv
+    Info (12023): Found entity 1: altera_merlin_axi_translator File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_axi_translator.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_sram.v
+    Info (12023): Found entity 1: niosvprocessor_sram File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_sram.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor.v
+    Info (12023): Found entity 1: niosvprocessor_niosvprocessor File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor_irq_mapper.sv
+    Info (12023): Found entity 1: niosvprocessor_niosvprocessor_irq_mapper File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor_irq_mapper.sv Line: 31
+Info (12021): Found 1 design units, including 0 entities, in source file niosvprocessor/synthesis/submodules/niosv_dm_def.sv
+    Info (12022): Found design unit 1: niosv_dm_def (SystemVerilog) (niosvprocessor) File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_dm_def.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_ram.sv
+    Info (12023): Found entity 1: niosv_ram File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_ram.sv Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_dm_jtag2mm.sv
+    Info (12023): Found entity 1: niosv_dm_jtag2mm File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_dm_jtag2mm.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_dm_top.sv
+    Info (12023): Found entity 1: niosv_dm_top File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_dm_top.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_debug_module.sv
+    Info (12023): Found entity 1: niosv_debug_module File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_debug_module.sv Line: 76
+Warning (12090): Entity "altera_std_synchronizer_bundle" obtained from "niosvprocessor/synthesis/submodules/altera_std_synchronizer_bundle.v" instead of from Quartus Prime megafunction library File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_std_synchronizer_bundle.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_std_synchronizer_bundle.v
+    Info (12023): Found entity 1: altera_std_synchronizer_bundle File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_std_synchronizer_bundle.v Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_std_synchronizer_nocut.v
+    Info (12023): Found entity 1: altera_std_synchronizer_nocut File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_std_synchronizer_nocut.v Line: 44
+Warning (12090): Entity "altera_std_synchronizer" obtained from "niosvprocessor/synthesis/submodules/altera_std_synchronizer.v" instead of from Quartus Prime megafunction library File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_std_synchronizer.v Line: 37
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_std_synchronizer.v
+    Info (12023): Found entity 1: altera_std_synchronizer File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_std_synchronizer.v Line: 37
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_avalon_st_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_clock_crosser File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_clock_crosser.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_handshake_clock_crosser File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_timer_msip.sv
+    Info (12023): Found entity 1: niosv_timer_msip File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_timer_msip.sv Line: 16
+Info (12021): Found 1 design units, including 0 entities, in source file niosvprocessor/synthesis/submodules/niosv_opcode_def.sv
+    Info (12022): Found design unit 1: niosv_opcode_def (SystemVerilog) (niosvprocessor) File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_opcode_def.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_mem_op_state.sv
+    Info (12023): Found entity 1: niosv_mem_op_state File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_mem_op_state.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_reg_file.sv
+    Info (12023): Found entity 1: niosv_reg_file File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_reg_file.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_csr.sv
+    Info (12023): Found entity 1: niosv_csr File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_csr.sv Line: 94
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_interrupt_handler.sv
+    Info (12023): Found entity 1: niosv_interrupt_handler File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_interrupt_handler.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_multiplier.sv
+    Info (12023): Found entity 1: niosv_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_multiplier.sv Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_divider.sv
+    Info (12023): Found entity 1: niosv_divider File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_divider.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_instr_buffer.sv
+    Info (12023): Found entity 1: niosv_instr_buffer File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_instr_buffer.sv Line: 33
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_32dec.v
+    Info (12023): Found entity 1: niosv_altecc_32dec_altecc_decoder_jqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_32dec.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_32dec File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_32dec.v Line: 213
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_32enc.v
+    Info (12023): Found entity 1: niosv_altecc_32enc_altecc_encoder_08b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_32enc.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_32enc File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_32enc.v Line: 95
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec20.v
+    Info (12023): Found entity 1: niosv_altecc_dec20_altecc_decoder_cqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec20.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec20 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec20.v Line: 187
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc20.v
+    Info (12023): Found entity 1: niosv_altecc_enc20_altecc_encoder_p7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc20.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc20 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc20.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec21.v
+    Info (12023): Found entity 1: niosv_altecc_dec21_altecc_decoder_eqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec21.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec21 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec21.v Line: 189
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc21.v
+    Info (12023): Found entity 1: niosv_altecc_enc21_altecc_encoder_r7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc21.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc21 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc21.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec22.v
+    Info (12023): Found entity 1: niosv_altecc_dec22_altecc_decoder_gqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec22.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec22 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec22.v Line: 191
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc22.v
+    Info (12023): Found entity 1: niosv_altecc_enc22_altecc_encoder_t7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc22.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc22 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc22.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec23.v
+    Info (12023): Found entity 1: niosv_altecc_dec23_altecc_decoder_iqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec23.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec23 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec23.v Line: 193
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc23.v
+    Info (12023): Found entity 1: niosv_altecc_enc23_altecc_encoder_v7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc23.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc23 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc23.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec24.v
+    Info (12023): Found entity 1: niosv_altecc_dec24_altecc_decoder_bqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec24.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec24 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec24.v Line: 195
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc24.v
+    Info (12023): Found entity 1: niosv_altecc_enc24_altecc_encoder_o7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc24.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc24 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc24.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec25.v
+    Info (12023): Found entity 1: niosv_altecc_dec25_altecc_decoder_dqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec25.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec25 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec25.v Line: 197
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc25.v
+    Info (12023): Found entity 1: niosv_altecc_enc25_altecc_encoder_q7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc25.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc25 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc25.v Line: 93
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_dec26.v
+    Info (12023): Found entity 1: niosv_altecc_dec26_altecc_decoder_fqe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec26.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_dec26 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_dec26.v Line: 199
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_altecc_enc26.v
+    Info (12023): Found entity 1: niosv_altecc_enc26_altecc_encoder_s7b File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc26.v Line: 60
+    Info (12023): Found entity 2: niosv_altecc_enc26 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_altecc_enc26.v Line: 93
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_ecc_ram.sv
+    Info (12023): Found entity 1: niosv_ecc_ram File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_ecc_ram.sv Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_enc_dec.v
+    Info (12023): Found entity 1: niosv_enc_dec File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_enc_dec.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_tcm_ram.sv
+    Info (12023): Found entity 1: niosv_tcm_ram File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_tcm_ram.sv Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_victim_buffer.sv
+    Info (12023): Found entity 1: niosv_victim_buffer File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_victim_buffer.sv Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_alu.sv
+    Info (12023): Found entity 1: niosv_g_alu File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_alu.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_fetch.sv
+    Info (12023): Found entity 1: niosv_g_fetch File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fetch.sv Line: 33
+Info (12021): Found 3 design units, including 3 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_dcache.sv
+    Info (12023): Found entity 1: niosv_g_dcache File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dcache.sv Line: 18
+    Info (12023): Found entity 2: dcache_mem_op_state File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dcache.sv Line: 1803
+    Info (12023): Found entity 3: dtcs_mem_op_state_slv File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dcache.sv Line: 1925
+Info (12021): Found 2 design units, including 2 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_instr_cache.sv
+    Info (12023): Found entity 1: niosv_g_instr_cache File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_instr_cache.sv Line: 22
+    Info (12023): Found entity 2: itcs_mem_op_state_slv File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_instr_cache.sv Line: 1259
+Info (12021): Found 1 design units, including 0 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_fp_def.sv
+    Info (12022): Found design unit 1: niosv_g_fp_def (SystemVerilog) (niosvprocessor) File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fp_def.sv Line: 21
+Info (12021): Found 22 design units, including 22 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_fpu.sv
+    Info (12023): Found entity 1: niosv_g_fpu File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 110
+    Info (12023): Found entity 2: niosv_g_fpu_classifier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 635
+    Info (12023): Found entity 3: niosv_g_fpu_E_to_fpr_ops File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 683
+    Info (12023): Found entity 4: niosv_g_fpu_E_to_gpr_ops File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 743
+    Info (12023): Found entity 5: niosv_g_fp32_fclass File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 786
+    Info (12023): Found entity 6: niosv_g_fpu_int_to_fp32 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 859
+    Info (12023): Found entity 7: niosv_g_fpu_fp32_to_int File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 966
+    Info (12023): Found entity 8: niosv_g_fpu_fp32_min_max File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 1101
+    Info (12023): Found entity 9: niosv_g_fpu_fp32_dsp_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 1173
+    Info (12023): Found entity 10: niosv_g_fpu_fp32_dsp_fused_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 1316
+    Info (12023): Found entity 11: niosv_g_fpu_generic_fp32_dsp_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 1578
+    Info (12023): Found entity 12: niosv_g_fpu_soft_float_multiply_add_ops File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 1745
+    Info (12023): Found entity 13: niosv_g_fpu_fp32_divider File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2033
+    Info (12023): Found entity 14: niosv_g_fpu_fp32_sqrt File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2082
+    Info (12023): Found entity 15: niosv_g_fpu_tennm_fp32_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2156
+    Info (12023): Found entity 16: niosv_g_fpu_tennm_fp32_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2212
+    Info (12023): Found entity 17: niosv_g_fpu_fourteennm_fp32_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2266
+    Info (12023): Found entity 18: niosv_g_fpu_fourteennm_fp32_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2330
+    Info (12023): Found entity 19: niosv_g_fpu_twentynm_fp32_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2413
+    Info (12023): Found entity 20: niosv_g_fpu_twentynm_fp32_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2542
+    Info (12023): Found entity 21: niosv_g_fpu_cyclone10gx_fp32_adder File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2618
+    Info (12023): Found entity 22: niosv_g_fpu_cyclone10gx_fp32_multiplier File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_fpu.sv Line: 2690
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/int33_to_fp32.sv
+    Info (12023): Found entity 1: int33_to_fp32 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/int33_to_fp32.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_to_int32.sv
+    Info (12023): Found entity 1: fp32_to_int32 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_to_int32.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_to_uint32.sv
+    Info (12023): Found entity 1: fp32_to_uint32 File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_to_uint32.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_alu_cycloneivgx.sv
+    Info (12023): Found entity 1: fp32_alu_cycloneivgx File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_alu_cycloneivgx.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_mult_cycloneivgx.sv
+    Info (12023): Found entity 1: fp32_mult_cycloneivgx File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_mult_cycloneivgx.sv Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_div.sv
+    Info (12023): Found entity 1: fp32_div File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_div.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/fp32_sqrt.sv
+    Info (12023): Found entity 1: fp32_sqrt File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/fp32_sqrt.sv Line: 36
+Info (12021): Found 4 design units, including 4 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_dspba_library_ver.sv
+    Info (12023): Found entity 1: niosv_g_dspba_delay_ver File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dspba_library_ver.sv Line: 27
+    Info (12023): Found entity 2: niosv_g_dspba_sync_reg_ver File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dspba_library_ver.sv Line: 115
+    Info (12023): Found entity 3: niosv_g_dspba_pipe File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dspba_library_ver.sv Line: 414
+    Info (12023): Found entity 4: niosv_g_dspba_dcfifo_mixed_widths File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_dspba_library_ver.sv Line: 456
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/instr_decoder_niosvprocessor_niosvprocessor_hart.sv
+    Info (12023): Found entity 1: instr_decoder_niosvprocessor_niosvprocessor_hart File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/instr_decoder_niosvprocessor_niosvprocessor_hart.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosv_g_core_niosvprocessor_niosvprocessor_hart.sv
+    Info (12023): Found entity 1: niosv_g_core_niosvprocessor_niosvprocessor_hart File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_g_core_niosvprocessor_niosvprocessor_hart.sv Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor_hart.sv
+    Info (12023): Found entity 1: niosvprocessor_niosvprocessor_hart File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_niosvprocessor_hart.sv Line: 17
+Info (12021): Found 5 design units, including 5 entities, in source file niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v
+    Info (12023): Found entity 1: niosvprocessor_jtag_sim_scfifo_w File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v Line: 21
+    Info (12023): Found entity 2: niosvprocessor_jtag_scfifo_w File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v Line: 78
+    Info (12023): Found entity 3: niosvprocessor_jtag_sim_scfifo_r File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v Line: 164
+    Info (12023): Found entity 4: niosvprocessor_jtag_scfifo_r File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v Line: 243
+    Info (12023): Found entity 5: niosvprocessor_jtag File: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosvprocessor_jtag.v Line: 331
+Info (12021): Found 1 design units, including 1 entities, in source file testcode.v
+    Info (12023): Found entity 1: testcode File: C:/Users/f_off/Desktop/quartusprojects/testcode.v Line: 2
+Info (12127): Elaborating entity "testcode" for the top level hierarchy
+Warning (10175): Verilog HDL warning at testcode.v(30): ignoring unsupported system task File: C:/Users/f_off/Desktop/quartusprojects/testcode.v Line: 30
+Error (12006): Node instance "uut" instantiates undefined entity "top_level_design". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/f_off/Desktop/quartusprojects/testcode.v Line: 11
+Info (144001): Generated suppressed messages file C:/Users/f_off/Desktop/quartusprojects/output_files/niosvprocessor.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 4 warnings
+    Error: Peak virtual memory: 4829 megabytes
+    Error: Processing ended: Sat Jun  8 03:20:16 2024
+    Error: Elapsed time: 00:00:24
+    Error: Total CPU time (on all processors): 00:00:41
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/f_off/Desktop/quartusprojects/output_files/niosvprocessor.map.smsg.
+
+

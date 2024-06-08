@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+vniosvprocessor_mm_interconnect_0_avalon_st_adapter
+2./../niosvprocessor_tb/simulation/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v
+!s110 1717810795
+!i10b 1
+!s100 YeI2W9B5_GD^OC?G^48f_1
+ITm:N9NkWVS]:UX[NNSgeZ2
+R0
+w1717807936
+8./../niosvprocessor_tb/simulation/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v
+F./../niosvprocessor_tb/simulation/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v
+!i122 0
+L0 9 194
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1717810795.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/niosvprocessor_mm_interconnect_0_avalon_st_adapter.v|-work|avalon_st_adapter|
+!i113 0
+o-work avalon_st_adapter -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

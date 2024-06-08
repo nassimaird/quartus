@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+vniosvprocessor_sram
+2./../niosvprocessor_tb/simulation/submodules/niosvprocessor_sram.v
+!s110 1717810821
+!i10b 1
+!s100 `;L3``I;l?[zRUUQhPeC12
+ImOzCKaa2;:DO2BmXoN[2g2
+R0
+w1717807917
+8./../niosvprocessor_tb/simulation/submodules/niosvprocessor_sram.v
+F./../niosvprocessor_tb/simulation/submodules/niosvprocessor_sram.v
+!i122 0
+L0 21 68
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1717810820.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/niosvprocessor_sram.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/niosvprocessor_sram.v|-work|sram|
+!i113 0
+o-work sram -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

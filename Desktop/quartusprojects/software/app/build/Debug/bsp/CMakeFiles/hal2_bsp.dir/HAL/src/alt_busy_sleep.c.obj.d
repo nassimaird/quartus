@@ -1,0 +1,19 @@
+bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj: \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/src/alt_busy_sleep.c \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\lib\gcc\riscv32-unknown-elf\12.1.0\include-fixed\limits.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\lib\gcc\riscv32-unknown-elf\12.1.0\include-fixed\syslimits.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\limits.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\newlib.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\_newlib_version.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\sys\cdefs.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\machine\_default_types.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\sys\features.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\lib\gcc\riscv32-unknown-elf\12.1.0\include\stddef.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\riscv32-unknown-elf\include\sys\syslimits.h \
+ c:\users\f_off\desktop\quartusprojects\software\bsp\system.h \
+ c:\users\f_off\desktop\quartusprojects\software\bsp\linker.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_timestamp.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/intel_niosv.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/priv/alt_busy_sleep.h

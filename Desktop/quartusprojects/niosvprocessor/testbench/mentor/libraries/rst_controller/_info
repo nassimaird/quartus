@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+valtera_reset_controller
+2./../niosvprocessor_tb/simulation/submodules/altera_reset_controller.v
+Z1 !s110 1717810820
+!i10b 1
+!s100 gEiOZd1;;=B0SiCd?HUG`0
+I>0fE9ElI@lgWk=bNZ=bT81
+R0
+Z2 w1717807933
+8./../niosvprocessor_tb/simulation/submodules/altera_reset_controller.v
+F./../niosvprocessor_tb/simulation/submodules/altera_reset_controller.v
+!i122 0
+L0 42 278
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1717810819.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+!i113 0
+Z5 o-work rst_controller -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+valtera_reset_synchronizer
+2./../niosvprocessor_tb/simulation/submodules/altera_reset_synchronizer.v
+R1
+!i10b 1
+!s100 ^S;S68hO:GV8JFJ^DhmfL2
+If8imMCaYXhWL]`WfCh6Fg0
+R0
+R2
+8./../niosvprocessor_tb/simulation/submodules/altera_reset_synchronizer.v
+F./../niosvprocessor_tb/simulation/submodules/altera_reset_synchronizer.v
+!i122 1
+L0 24 63
+R3
+R4
+r1
+!s85 0
+31
+!s108 1717810820.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!i113 0
+R5
+R6

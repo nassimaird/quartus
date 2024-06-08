@@ -1,0 +1,19 @@
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/drivers/src/altera_avalon_jtag_uart_fd.c \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/alt_types.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_dev.h \
+ c:\users\f_off\desktop\quartusprojects\software\bsp\system.h \
+ c:\users\f_off\desktop\quartusprojects\software\bsp\linker.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_llist.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/priv/alt_dev_llist.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/drivers/inc/altera_avalon_jtag_uart.h \
+ c:\intelfpga\23.1std\riscfree\toolchain\riscv32-unknown-elf\lib\gcc\riscv32-unknown-elf\12.1.0\include\stddef.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_alarm.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_llist.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/priv/alt_alarm.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/sys/alt_warning.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/os/alt_hooks.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/os/alt_sem.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/priv/alt_no_error.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/HAL/inc/os/alt_flag.h \
+ C:/Users/f_off/Desktop/quartusprojects/software/bsp/drivers/inc/altera_avalon_jtag_uart_fd.h

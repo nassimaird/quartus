@@ -1,0 +1,32 @@
+03:02:09 **** Incremental Build of configuration Debug for project app ****
+"C:\\intelFPGA\\23.1std\\riscfree\\build_tools\\bin\\make.exe" -j all 
+[ 95%] Built target hal2_bsp
+[ 96%] Building C object CMakeFiles/app.elf.dir/nioscode.c.obj
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c: In function 'main':
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:408:12: warning: variable 'rmse' set but not used [-Wunused-but-set-variable]
+  408 |     double rmse;
+      |            ^~~~
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:407:12: warning: unused variable 'SNRimp' [-Wunused-variable]
+  407 |     double SNRimp = calculateSNRimp(ecgoriginal, ecgData, Y, numSamples);
+      |            ^~~~~~
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:406:12: warning: unused variable 'SNRout' [-Wunused-variable]
+  406 |     double SNRout = calculateSNRout(ecgoriginal, Y, numSamples);
+      |            ^~~~~~
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:405:12: warning: unused variable 'PRD' [-Wunused-variable]
+  405 |     double PRD = calculatePRD(ecgoriginal, Y, numSamples);
+      |            ^~~
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:321:12: warning: unused variable 'finalSignal2' [-Wunused-variable]
+  321 |     double finalSignal2 [3708];
+      |            ^~~~~~~~~~~~
+C:/Users/f_off/Desktop/quartusprojects/software/app/nioscode.c:281:12: warning: unused variable 'Hi_R' [-Wunused-variable]
+  281 |     double Hi_R[] = {-0.0011, -0.0048, 0.0006, 0.0316, 0.0275, -0.0975, -0.1298, 0.2263, 0.3153, -0.7511, 0.4946, -0.1115};
+      |            ^~~~
+[ 97%] Linking C executable app.elf
+[ 97%] Built target app.elf
+[ 98%] Creating app.elf.objdump.
+[100%] Reporting memory available for stack + heap in app.elf.
+app.elf
+ * 188.64 KB - Program size (code + initialized data).
+ * 292.65 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+[100%] Built target create-objdump

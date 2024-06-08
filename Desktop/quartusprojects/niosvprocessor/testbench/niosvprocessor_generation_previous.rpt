@@ -1,0 +1,149 @@
+Info: Starting: Create testbench Platform Designer system
+Info: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/niosvprocessor.ipx
+Info: qsys-generate C:\Users\f_off\Desktop\quartusprojects\niosvprocessor.qsys --testbench=STANDARD --output-directory=C:\Users\f_off\Desktop\quartusprojects --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading quartusprojects/niosvprocessor.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag
+Progress: Adding niosvprocessor [intel_niosv_g 1.0.0]
+Progress: Parameterizing module niosvprocessor
+Progress: Adding sram [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module sram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosvprocessor.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: niosvprocessor.niosvprocessor: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga/23.1std/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga\23.1std\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga\23.1std\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga\23.1std\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga\23.1std\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.08 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.08 seconds
+Info: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\Users\f_off\Desktop\quartusprojects\niosvprocessor\testbench\niosvprocessor.ipx
+Progress: Loading quartusprojects/niosvprocessor.qsys
+Info: C:/Users/f_off/Desktop/quartusprojects/* matched 14 files in 0.01 seconds
+Info: C:/Users/f_off/Desktop/quartusprojects/ip/**/* matched 0 files in 0.00 seconds
+Info: C:/Users/f_off/Desktop/quartusprojects/*/* matched 434 files in 0.10 seconds
+Info: C:\Users\f_off\Desktop\quartusprojects\niosvprocessor\testbench\niosvprocessor.ipx described 0 plugins, 3 paths, in 0.10 seconds
+Progress: Loading testbench/niosvprocessor_tb.qsys
+Info: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/* matched 8 files in 0.27 seconds
+Info: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/*/* matched 1 files in 0.00 seconds
+Info: C:/Users/f_off/.altera.quartus/ip/23.1/**/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga\23.1std\ip\altera\altera_components.ipx
+Info: C:\intelfpga\23.1std\ip\altera\altera_components.ipx described 1982 plugins, 0 paths, in 0.63 seconds
+Info: C:/intelfpga/23.1std/ip/**/* matched 108 files in 0.64 seconds
+Info: C:/intelfpga/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga\23.1std\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga\23.1std\quartus\sopc_builder\builtin.ipx described 87 plugins, 0 paths, in 0.03 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/**/* matched 8 files in 0.03 seconds
+Info: C:/intelfpga/23.1std/quartus/common/librarian/factories/**/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: C:\intelfpga\23.1std\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 1.07 seconds
+Info: C:/intelfpga/23.1std/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 1.07 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga/23.1std/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: niosvprocessor
+Info: TB_Gen: System design is: niosvprocessor
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: send_message Info TB_Gen: Creating testbench system : niosvprocessor_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : niosvprocessor_tb with all standard BFMs
+Info: create_system niosvprocessor_tb
+Info: add_instance niosvprocessor_inst niosvprocessor 
+Info: set_use_testbench_naming_pattern true niosvprocessor
+Info: get_instance_interfaces niosvprocessor_inst
+Info: get_instance_interface_property niosvprocessor_inst clk CLASS_NAME
+Info: get_instance_interface_property niosvprocessor_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property niosvprocessor_inst clk CLASS_NAME
+Info: add_instance niosvprocessor_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property niosvprocessor_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value niosvprocessor_inst clk clockRate
+Info: set_instance_parameter_value niosvprocessor_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value niosvprocessor_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property niosvprocessor_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property niosvprocessor_inst clk CLASS_NAME
+Info: get_instance_interfaces niosvprocessor_inst_clk_bfm
+Info: get_instance_interface_property niosvprocessor_inst_clk_bfm clk CLASS_NAME
+Info: add_connection niosvprocessor_inst_clk_bfm.clk niosvprocessor_inst.clk
+Info: send_message Info TB_Gen: Saving testbench system: niosvprocessor_tb.qsys
+Info: TB_Gen: Saving testbench system: niosvprocessor_tb.qsys
+Info: save_system niosvprocessor_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/niosvprocessor_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\f_off\Desktop\quartusprojects\niosvprocessor.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=C:\Users\f_off\Desktop\quartusprojects\niosvprocessor\testbench\niosvprocessor_tb\simulation --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading testbench/niosvprocessor_tb.qsys
+Progress: Reading input file
+Progress: Adding niosvprocessor_inst [niosvprocessor 1.0]
+Progress: Parameterizing module niosvprocessor_inst
+Progress: Adding niosvprocessor_inst_clk_bfm [altera_avalon_clock_source 23.1]
+Progress: Parameterizing module niosvprocessor_inst_clk_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosvprocessor_tb.niosvprocessor_inst.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: niosvprocessor_tb.niosvprocessor_inst.niosvprocessor.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: niosvprocessor_tb.niosvprocessor_inst_clk_bfm: Elaborate: altera_clock_source
+Info: niosvprocessor_tb.niosvprocessor_inst_clk_bfm:            $Revision: #1 $
+Info: niosvprocessor_tb.niosvprocessor_inst_clk_bfm:            $Date: 2022/10/30 $
+Info: niosvprocessor_tb: Generating niosvprocessor_tb "niosvprocessor_tb" for SIM_VERILOG
+Info: niosvprocessor_inst: "niosvprocessor_tb" instantiated niosvprocessor "niosvprocessor_inst"
+Info: niosvprocessor_inst_clk_bfm: "niosvprocessor_tb" instantiated altera_avalon_clock_source "niosvprocessor_inst_clk_bfm"
+Info: jtag: Starting RTL generation for module 'niosvprocessor_jtag'
+Info: jtag:   Generation command is [exec C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosvprocessor_jtag --dir=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0030_jtag_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0030_jtag_gen//niosvprocessor_jtag_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0030_jtag_gen/  ]
+Info: jtag: Done RTL generation for module 'niosvprocessor_jtag'
+Info: jtag: "niosvprocessor_inst" instantiated altera_avalon_jtag_uart "jtag"
+Info: niosvprocessor: "niosvprocessor_inst" instantiated intel_niosv_g "niosvprocessor"
+Info: sram: Starting RTL generation for module 'niosvprocessor_sram'
+Info: sram:   Generation command is [exec C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosvprocessor_sram --dir=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0031_sram_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0031_sram_gen//niosvprocessor_sram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/f_off/AppData/Local/Temp/alt9882_642090870797306877.dir/0031_sram_gen/  ]
+Info: sram: Done RTL generation for module 'niosvprocessor_sram'
+Info: sram: "niosvprocessor_inst" instantiated altera_avalon_onchip_memory2 "sram"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "niosvprocessor_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosvprocessor_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosvprocessor_inst" instantiated altera_reset_controller "rst_controller"
+Error: add_fileset_file: No such file C:/intelfpga/23.1std/ip/altera/soft_processor/intel_niosv_g/cadence/niosv_opcode_def.sv     while executing "add_fileset_file $current_sim/niosv_opcode_def.sv             SYSTEM_VERILOG PATH $current_sim/niosv_opcode_def.sv          $attr"     (procedure "fileset_callback_impl" line 83)     invoked from within "fileset_callback_impl sim $entity_name"     (procedure "sim_callback" line 2)     invoked from within "sim_callback niosvprocessor_niosvprocessor_hart"
+Info: hart: "niosvprocessor" instantiated intel_niosv_g_unit "hart"
+Error: Generation stopped, 61 or more modules remaining
+Info: niosvprocessor_tb: Done "niosvprocessor_tb" with 32 modules, 62 files
+Error: qsys-generate failed with exit code 1: 2 Errors, 6 Warnings
+Error: There were errors creating the testbench system.
+Info: Finished: Create testbench Platform Designer system

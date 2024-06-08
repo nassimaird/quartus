@@ -1,0 +1,103 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\f_off\Desktop\quartusprojects\niosvprocessor.qsys --block-symbol-file --output-directory=C:\Users\f_off\Desktop\quartusprojects\niosvprocessor --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading quartusprojects/niosvprocessor.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag
+Progress: Adding niosvprocessor [intel_niosv_g 1.0.0]
+Progress: Parameterizing module niosvprocessor
+Progress: Adding sram [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module sram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosvprocessor.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: niosvprocessor.niosvprocessor: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\f_off\Desktop\quartusprojects\niosvprocessor.qsys --synthesis=VHDL --output-directory=C:\Users\f_off\Desktop\quartusprojects\niosvprocessor\synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading quartusprojects/niosvprocessor.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag
+Progress: Adding niosvprocessor [intel_niosv_g 1.0.0]
+Progress: Parameterizing module niosvprocessor
+Progress: Adding sram [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module sram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: niosvprocessor.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: niosvprocessor.niosvprocessor: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor: Properties (associatedClock) have been set on interface ndm_reset_in - in composed mode these are ignored
+Warning: niosvprocessor.niosvprocessor.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: niosvprocessor: Generating niosvprocessor "niosvprocessor" for QUARTUS_SYNTH
+Info: jtag: Starting RTL generation for module 'niosvprocessor_jtag'
+Info: jtag:   Generation command is [exec C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=niosvprocessor_jtag --dir=C:/Users/f_off/AppData/Local/Temp/alt9881_7233482927956575427.dir/0002_jtag_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/f_off/AppData/Local/Temp/alt9881_7233482927956575427.dir/0002_jtag_gen//niosvprocessor_jtag_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag: Done RTL generation for module 'niosvprocessor_jtag'
+Info: jtag: "niosvprocessor" instantiated altera_avalon_jtag_uart "jtag"
+Info: niosvprocessor: "niosvprocessor" instantiated intel_niosv_g "niosvprocessor"
+Info: sram: Starting RTL generation for module 'niosvprocessor_sram'
+Info: sram:   Generation command is [exec C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=niosvprocessor_sram --dir=C:/Users/f_off/AppData/Local/Temp/alt9881_7233482927956575427.dir/0003_sram_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/f_off/AppData/Local/Temp/alt9881_7233482927956575427.dir/0003_sram_gen//niosvprocessor_sram_component_configuration.pl  --do_build_sim=0  ]
+Info: sram: Done RTL generation for module 'niosvprocessor_sram'
+Info: sram: "niosvprocessor" instantiated altera_avalon_onchip_memory2 "sram"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "niosvprocessor" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "niosvprocessor" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "niosvprocessor" instantiated altera_reset_controller "rst_controller"
+Info: hart: "niosvprocessor" instantiated intel_niosv_g_unit "hart"
+Info: timer_module: "niosvprocessor" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "niosvprocessor" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/niosv_ram.sv
+Info: irq_mapper: "niosvprocessor" instantiated altera_irq_mapper "irq_mapper"
+Info: niosvprocessor_data_manager_translator: "mm_interconnect_0" instantiated altera_merlin_axi_translator "niosvprocessor_data_manager_translator"
+Info: jtag_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_avalon_jtag_slave_translator"
+Info: niosvprocessor_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "niosvprocessor_data_manager_agent"
+Info: jtag_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_avalon_jtag_slave_agent"
+Info: jtag_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_avalon_jtag_slave_agent_rsp_fifo"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: niosvprocessor_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "niosvprocessor_instruction_manager_wr_limiter"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: jtag_avalon_jtag_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "jtag_avalon_jtag_slave_burst_adapter"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/f_off/Desktop/quartusprojects/niosvprocessor/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: niosvprocessor: Done "niosvprocessor" with 31 modules, 105 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+valtera_avalon_sc_fifo
+2./../niosvprocessor_tb/simulation/submodules/altera_avalon_sc_fifo.v
+!s110 1717810802
+!i10b 1
+!s100 5BK1b[bhL0>Ei=h=H:bmS0
+I1ii3K7YDCPdKh3z;z9n=:3
+R0
+w1717807934
+8./../niosvprocessor_tb/simulation/submodules/altera_avalon_sc_fifo.v
+F./../niosvprocessor_tb/simulation/submodules/altera_avalon_sc_fifo.v
+!i122 0
+L0 21 895
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1717810802.000000
+!s107 ./../niosvprocessor_tb/simulation/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/submodules/altera_avalon_sc_fifo.v|-work|jtag_avalon_jtag_slave_agent_rsp_fifo|
+!i113 0
+o-work jtag_avalon_jtag_slave_agent_rsp_fifo -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

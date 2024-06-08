@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sat Jun  8 00:31:44 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 Patches 0.02std SC Lite Edition
+Revision Name : niosvprocessor
+Top-level Entity Name : niosvprocessor
+Family : Cyclone V
+Device : 5CSEBA6U23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 3,753 / 41,910 ( 9 % )
+Total registers : 4296
+Total pins : 1 / 314 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 4,074,496 / 5,662,720 ( 72 % )
+Total RAM Blocks : 510 / 553 ( 92 % )
+Total DSP Blocks : 3 / 112 ( 3 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

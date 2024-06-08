@@ -1,0 +1,48 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/f_off/Desktop/quartusprojects/niosvprocessor/testbench/mentor
+T_opt
+!s110 1717810828
+VDUi]WBUBg^V6Cc_P>[kCa0
+04 17 4 work niosvprocessor_tb fast 0
+=1-b05adab506a0-6663b68b-255-23b8
+R0
+!s12b OEM100
+!s124 OEM10U214 
+o-quiet -auto_acc_if_foreign -work work -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_002 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_002 -L cmd_demux -L jtag_avalon_jtag_slave_burst_adapter -L niosvprocessor_instruction_manager_wr_limiter -L router_005 -L router_004 -L router_002 -L router -L jtag_avalon_jtag_slave_agent_rsp_fifo -L jtag_avalon_jtag_slave_agent -L niosvprocessor_data_manager_agent -L jtag_avalon_jtag_slave_translator -L niosvprocessor_data_manager_translator -L irq_mapper -L dbg_mod -L timer_module -L hart -L rst_controller -L mm_interconnect_0 -L sram -L niosvprocessor -L jtag -L niosvprocessor_inst_clk_bfm -L niosvprocessor_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vniosvprocessor_tb
+2./../niosvprocessor_tb/simulation/niosvprocessor_tb.v
+!s110 1717810822
+!i10b 1
+!s100 5J]zc3gXE1HJ@J^h?>5Ml2
+IzC;Dcf2agPUQjR:^h7?2;3
+R1
+w1717807903
+8./../niosvprocessor_tb/simulation/niosvprocessor_tb.v
+F./../niosvprocessor_tb/simulation/niosvprocessor_tb.v
+!i122 0
+L0 6 17
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1717810821.000000
+!s107 ./../niosvprocessor_tb/simulation/niosvprocessor_tb.v|
+!s90 -reportprogress|300|./../niosvprocessor_tb/simulation/niosvprocessor_tb.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
